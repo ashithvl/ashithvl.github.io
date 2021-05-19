@@ -1,0 +1,481 @@
+$version: "1.0.3";
+
+/* ------------------------------------------------
+ Author: ArtStyles Brands (ArtTemplate / ArtIcons)
+ URL: http://themeforest.net/user/artstyles
+ 
+ Template Name: FORZO
+ version-rtl: #{$version}
+------------------------------------------------ */
+
+/* -----------------------------------------------------------------
+    - General Styles
+----------------------------------------------------------------- */
+
+.btn {
+  .btn_icon {
+	transform: rotate(180deg);
+  }
+  &:hover {
+    .btn_icon {
+	  transform: translateX(3px) rotate(180deg);
+    }  
+  }
+}
+  
+/* -----------------------------------------------------------------
+    - Top
+----------------------------------------------------------------- */
+
+.top {
+  .navbar__logo {
+    float: left;
+  }
+}
+.navbar__right {
+  float: right;
+}
+.nav__v1 {
+  .navbar {
+    .fa {
+      left: -18px;
+	  right: auto;
+	}
+  }
+  .footer_nav_bar {
+    &::before {
+      right: 0;
+	}
+  }
+}
+
+/* -----------------------------------------------------------------
+    - Header
+----------------------------------------------------------------- */
+
+.hero {
+  .vertical_text {
+    line-height: 4;
+    padding-left: 0;
+	left: 0;
+    right: auto;
+	text-align: left;
+	-webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+  }
+  .sub_title {
+	padding-left: 0;
+	padding-right: 3px;
+  }
+}
+
+.hero__slider {
+  div.owl-dots {
+	margin-left: 0;
+	margin-right: 30px;
+	text-align: right;
+	@media only screen and (max-width: 580px) {
+	  margin-left: 0;
+	  margin-right: 15px;
+	}
+	.owl-dot {
+	  margin: 0 0 1px 20px;
+	  @media only screen and (max-width: 580px) {
+	    margin: 0 0 1px 15px;
+	  }
+    }
+  }
+  .owl-nav {
+	right: auto;
+	left: 0;
+	.owl-prev {
+	  padding-left: 0;
+	  padding-right: 40px;
+	  @media only screen and (max-width: 580px) {
+	    padding-left: 0;
+		padding-right: 18px;
+	  }
+	}
+	.owl-next {
+	  padding-right: 0;
+	  padding-left: 40px;
+	  text-align: left;
+	  @media only screen and (max-width: 580px) {
+	    padding-right: 0;
+		padding-left: 18px;
+	  }
+	}
+  }
+}
+
+/* -----------------------------------------------------------------
+    - Sections
+----------------------------------------------------------------- */
+
+.section__title {
+  &._left_bias {
+    &::after {
+	  left: 0;
+	  right: -100px;
+    }  
+  }
+}
+.edge {
+  &::before {
+	left: auto;
+    right: 0;
+  }
+}
+
+/* -----------------------------------------------------------------
+    - Section About
+----------------------------------------------------------------- */
+
+.col_describe {
+  &._left {
+    padding-left: 60px;
+    padding-right: 15px;
+	.edge {
+      &::before {
+	    left: -130px;
+	    right: auto;
+	  }
+	}
+	@media only screen and (max-width: 580px) {
+	  padding-left: 15px;
+	  padding-right: 15px;
+	}
+  }
+  &._right {
+    padding-left: 60px;
+	padding-right: 60px;
+	.edge {
+      &::before {
+	    left: auto;
+		right: -130px;
+	  }
+	}
+	@media only screen and (max-width: 580px) {
+	  padding-left: 15px;
+	  padding-right: 15px;
+	}
+  }
+  .edge {
+    &::before {
+	  left: auto;
+	}
+  }
+  .num_section {
+	text-align: left;
+  }
+}
+.image__box {
+  margin-left: 0;
+  margin-right: 55px;
+
+  &.box_v2 {
+	margin-left: 0;
+	@media only screen and (max-width: 990px) {
+	  margin-left: auto;
+	}
+  }
+  &._right {
+	float: right;
+	@media only screen and (max-width: 990px) {
+	  float: none;
+	}
+  }
+}
+
+/* -----------------------------------------------------------------
+    - Portfolio
+----------------------------------------------------------------- */
+
+.filter__items {
+  padding-right: 0;
+}
+.grid__portfolio {
+  .item_portfolio_hover {
+    .link__portfolio {
+      float: right;
+    }
+  }
+}
+.liked__box {
+  float: left;
+}
+  
+/* -----------------------------------------------------------------
+    - Project Single
+----------------------------------------------------------------- */
+
+.main__image__project {
+  .liked__box {
+    left: 20px;
+	right: auto;
+  }
+}
+.project__left__col {
+  .project_single._vertical & {
+    padding-left: 15px;
+	padding-right: 30px;
+	@media screen and (max-width: 991px) {
+	  padding-left: 15px;
+    }
+  }
+}
+
+.title_half_underscore {
+  &::before {
+	left: auto;
+	right: 0;
+  }
+}
+.details__list {
+  padding-right: 0;
+  &._inline {
+    li {
+	  margin-left: 40px;
+	  margin-right: 0;
+	}
+  }
+}
+.details__main__image {
+  left: 0;
+  right: 30px;
+}
+.pager__wrap {
+  .pager {
+	.previous i {
+	  margin-left: 10px;
+	  margin-right: 0;
+	  transform: rotate(180deg);
+	}
+	.next i {
+	  margin-left: 0;
+	  margin-right: 10px;
+	  transform: rotate(-180deg);
+	}
+  }
+}
+
+/* -----------------------------------------------------------------
+    - Popup Gallery
+----------------------------------------------------------------- */
+
+#lightcase-case {
+  #lightcase-info {
+    text-align: right;
+	@media only screen and (max-width: 640px) {
+	  &::before {
+	    left: 30px;
+	    right: auto;
+	  }
+	}
+	#lightcase-caption {
+	  @media screen and (max-width: 640px) {
+	    left: 15px;
+		right: auto;
+	  }
+	}
+  }
+}
+a[class*='lightcase-icon-'].lightcase-icon-close {
+  left: 0;
+  right: auto;
+}
+.options__photo {
+  margin-left: 30px;
+  margin-right: 0;
+  @media screen and (max-width: 640px) {
+    margin-left: 0;
+  }
+  span {
+	@media screen and (max-width: 640px) {
+	  padding-left: 15px;
+	  padding-right: 0;
+	}
+  }
+}
+
+/* -----------------------------------------------------------------
+    - Features
+----------------------------------------------------------------- */
+
+.features__box {
+  .description__features {
+    margin-left: 0;
+	margin-right: 30px;
+  }
+  @media screen and (max-width: 320px) {
+	.description__features {
+	  margin-right: 0;
+	}
+  }
+  &._column {
+	.description__features {
+	  margin-right: 0;
+	}
+  }
+}
+
+/* -----------------------------------------------------------------
+    - Our Team
+----------------------------------------------------------------- */
+
+.team__carousel {
+  .item__carousel {
+    background-position: top left;
+    .team_name {
+	  margin-left: 0;
+	  margin-right: -2px;
+	  &::before {
+		left: 0;
+		right: -88px;
+	  }
+	}
+  } 
+}
+.elsewhere {
+  li {
+    margin-left: 15px;
+    margin-right: 0;
+  }
+}
+
+/* -----------------------------------------------------------------
+    - Recent News
+----------------------------------------------------------------- */  
+
+.title_news  {
+  margin-left: 30px;
+  margin-right: 0;
+}
+.read__more { 
+  padding-left: 0;
+  padding-right: 32px;
+  &:hover	{
+    padding-left: 0;
+	padding-right: 52px;
+  }
+  &::before {
+    left: auto;
+    right: 0;
+  }
+}
+
+/* -----------------------------------------------------------------
+    - Blog
+----------------------------------------------------------------- */
+
+.item__news {
+  .title_news {
+	margin-left: 0;
+  }
+  .share__post {
+    a {
+	  margin-left: 35px;
+	  margin-right: 0;
+	  @media only screen and (max-width: 768px) {
+	    margin-left: 30px;
+		margin-right: 0;
+	  }
+	  span {
+		padding-left: 0;
+		padding-right: 15px;
+	  } 
+	}
+  }
+}
+
+.news__wrap__fullwidth {
+  &._sedibar {
+    .news__paragraph {
+	  padding-left: 40px;
+      padding-right: 60px;
+	}
+	.footer__news {
+	  padding-left: 40px;
+      padding-right: 60px;
+	}
+  }
+}
+
+.initial_letter {
+  font-size: inherit;
+  display: initial;
+  padding: 0;
+  float: none;
+}
+.quote {
+  padding-left: 0;
+  padding-right: 100px;
+  @media only screen and (max-width: 320px) {
+    padding-left: 0;
+	padding-right: 30px;
+  }
+  &::before {
+    left: -0;
+	right: -40px;
+    @media only screen and (max-width: 768px) {
+      left: 0;
+	  right: 0;
+    }
+  }
+}
+
+/* Sidebar */
+.col__sedebar {
+  padding-left: 60px;
+  padding-right: 0;
+  @media only screen and (max-width: 1199px) {
+	padding-left: 0;
+  }
+  .search-form {
+    .btn_search {
+	  left: 19px;
+	  right: 0;
+    }
+  }
+}
+
+/* -----------------------------------------------------------------
+    - Cooments
+----------------------------------------------------------------- */
+
+.section__comments {
+  .media {
+    .pull-left {
+	  float: right!important;
+	  padding-left: 0;
+	  margin-left: 30px;
+	  margin-right: 0;
+	  @media screen and (max-width: 580px) {
+	    margin-left: 20px;
+		margin-right: 0;
+      }
+    }
+	.media-body {
+	  .media-footer {
+        .reply {
+		  i {
+		    padding-right: 8px;
+            padding-right: 0;
+          }
+        }
+      }
+	}
+  }
+}
+
+/* -----------------------------------------------------------------
+    - Footer
+----------------------------------------------------------------- */  
+
+.footer {
+  &::before {
+	left: 0;
+    right: -15px;
+  } 
+}
